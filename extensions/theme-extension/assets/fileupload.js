@@ -5,7 +5,7 @@ document.getElementById('fileupload-input').addEventListener('change', function(
     const formData = new FormData();
     formData.append('file', file);
 
-    fetch('/app/fileupload', {
+    fetch('https://robot-pillow-sensors-aids.trycloudflare.com/app/fileupload', {
       method: 'POST',
       body: formData,
     })

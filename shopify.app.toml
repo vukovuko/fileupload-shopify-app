@@ -3,7 +3,7 @@
 client_id = "7f7f6e64135f0029733335baf88ed3d9"
 name = "fileupload-extension"
 handle = "fileupload-extension"
-application_url = "https://weddings-artist-murphy-india.trycloudflare.com"
+application_url = "https://pp-gateway-usda-angry.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_cart_transforms,write_products"
 
 [auth]
 redirect_urls = [
-  "https://weddings-artist-murphy-india.trycloudflare.com/auth/callback",
-  "https://weddings-artist-murphy-india.trycloudflare.com/auth/shopify/callback",
-  "https://weddings-artist-murphy-india.trycloudflare.com/api/auth/callback"
+  "https://pp-gateway-usda-angry.trycloudflare.com/auth/callback",
+  "https://pp-gateway-usda-angry.trycloudflare.com/auth/shopify/callback",
+  "https://pp-gateway-usda-angry.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
