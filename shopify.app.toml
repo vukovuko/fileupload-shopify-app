@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7f7f6e64135f0029733335baf88ed3d9"
+name = "fileupload-extension"
+handle = "fileupload-extension"
+application_url = "https://weddings-artist-murphy-india.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "fileupload-test-app.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_cart_transforms,write_products"
+
+[auth]
+redirect_urls = [
+  "https://weddings-artist-murphy-india.trycloudflare.com/auth/callback",
+  "https://weddings-artist-murphy-india.trycloudflare.com/auth/shopify/callback",
+  "https://weddings-artist-murphy-india.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks"
+
+[pos]
+embedded = false
